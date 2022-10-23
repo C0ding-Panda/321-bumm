@@ -17,6 +17,9 @@ body{
 .header:hover{
     color: black;
 } 
+#start_link{
+    text-decoration: none;
+}
 #button_div{
     display: flex;
     justify-content: center;
@@ -29,6 +32,9 @@ body{
     border-radius: 20px;
     height: 18vh;
     width: 22vw;
+    color: black;
+    font-size: 10vh;
+    font-weight: 900;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,8 +48,4 @@ body{
     background-color: black;
     cursor: url("./icons8-hand-cursor-gradient/icons8-hand-cursor-96.png"), auto; /*made by https://icons8.com/icon/48170/hand-cursor*/
 }
-#start{
-    color: black;
-    font-size: 10vh;
-    font-weight: 900;
-}
+

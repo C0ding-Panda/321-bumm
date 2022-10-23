@@ -1,0 +1,39 @@
+body{
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    cursor: url("../icons8-hand-cursor-gradient/icons8-hand-cursor-64.png"), auto;  
+}
+
+#back_link{
+    text-decoration: none;
+}
+#button_div{
+    display: flex;
+    align-items: center;
+    
+}
+#button{
+    margin: 2%;
+    margin-top: 3%;
+    height: 8vh;
+    width: 12vw;
+    border-color: transparent;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-weight: 900;
+    font-size: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: all;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-in-out;
+}
+#button:hover{
+    height: 6vh;
+    width: 10vw;
+    background-color: black;
+    cursor: url("../icons8-hand-cursor-gradient/icons8-hand-cursor-96.png"), auto; /*made by https://icons8.com/icon/48170/hand-cursor*/
+}
