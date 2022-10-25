@@ -2,18 +2,35 @@ body{
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: black;
+    color: white;
     cursor: url("../icons8-hand-cursor-gradient/icons8-hand-cursor-64.png"), auto;  
 }
 
 #back_link{
     text-decoration: none;
 }
-#button_div{
+
+#game_div{
     display: flex;
     align-items: center;
-    
+    justify-content: center;
+    font-size: 10vw;
+    font-weight: 900;
 }
-#button{
+#txt_3{
+    display: none;
+}
+#txt_2{
+    display: none;
+}
+#txt_1{
+    display: none;
+}
+#txt_bumm{
+    display: none;
+}
+
+.button{
     margin: 2%;
     margin-top: 3%;
     height: 8vh;
@@ -31,7 +48,7 @@ body{
     transition-duration: 1.5s;
     transition-timing-function: ease-in-out;
 }
-#button:hover{
+.button:hover{
     height: 6vh;
     width: 10vw;
     background-color: black;
