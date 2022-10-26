@@ -10,21 +10,21 @@ setTimeout(
         document.getElementById("txt_3").style.display = "none";
         document.getElementById("txt_2").style.display = "flex";
     },
-    2000
+    2010
 )
 setTimeout(
     function show1() {
         document.getElementById("txt_2").style.display = "none";
         document.getElementById("txt_1").style.display = "flex";
     },
-    3000
+    3010
 )
 setTimeout(
     function show_bumm() {
         document.getElementById("txt_1").style.display = "none  ";
         document.getElementById("txt_bumm").style.display = "flex";
     },
-    4000
+    4010    
 )
 setTimeout(
     function destroy() {
