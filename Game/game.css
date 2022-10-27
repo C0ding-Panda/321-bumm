@@ -49,6 +49,11 @@ body{
     font-size: 12vh;
     font-weight: 900;
 }
+@media screen and (max-width: 600px) {
+    div#game_div {
+    font-size: 10vh;
+    }
+}
 @media screen and (max-width: 250px) {
     div#game_div {
     font-size: 16vh;
@@ -78,42 +83,18 @@ body{
 .color{
     height: 8vh;
     width: 8vh;
-    background-color: red;
     margin: 3%;
+}
+@media screen and (max-width: 600px) {
+    div.color {
+        height: 6vh;
+        width: 6vh;
+    }
 }
 @media screen and (max-width: 250px) {
     div.color {
-        height: 12vh;
-        width: 12vh;
+        height: 10vh;
+        width: 10vh;
     }
 }
-#clr1{
-    display: flex;
-}
-#clr2{
-    display: flex;
-}
-#clr3{
-    display: none;
-}
-#clr4{
-    display: none;
-}
-#clr5{
-    display: none;
-}
-#clr6{
-    display: none;
-}
-#clr7{
-    display: none;
-}
-#clr8{
-    display: none;
-}
-#clr9{
-    display: none;
-}
-#clr10{
-    display: none;
-}
+

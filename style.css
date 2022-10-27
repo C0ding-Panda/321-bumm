@@ -17,6 +17,21 @@ body{
 .header:hover{
     color: black;
 } 
+@media screen and (max-width: 900px){
+    .header{
+        font-size: 8vh;
+    }
+}
+@media screen and (max-width: 600px){
+    .header{
+        font-size: 6vh;
+    }
+}
+@media screen and (max-width: 300px){
+    .header{
+        font-size: 8vh;
+    }
+}
 #start_link{
     text-decoration: none;
 }
@@ -48,4 +63,20 @@ body{
     background-color: black;
     cursor: url("./icons8-hand-cursor-gradient/icons8-hand-cursor-96.png"), auto; /*made by https://icons8.com/icon/48170/hand-cursor*/
 }
-
+@media screen and (max-width: 900px){
+    button#button{
+        font-size: 8vh;
+        width: 50vw;
+        height: 20vh;
+    }
+}
+@media screen and (max-width: 600px){
+    button#button{
+        font-size: 6vh;
+    }
+}
+@media screen and (max-width: 300px){
+    button#button{
+        font-size: 8vh;
+    }
+}

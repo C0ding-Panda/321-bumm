@@ -1,4 +1,29 @@
 function start() {
+    let color1_1 = Math.floor(Math.random() * 255);
+    let color1_2 = Math.floor(Math.random() * 255);
+    let color1_3 = Math.floor(Math.random() * 255);
+    let color1 =  "rgb(" + color1_1 + "," + color1_2 + ", " + color1_3 + ")";
+    //clr1
+    let color2_1 = Math.floor(Math.random() * 255);
+    let color2_2 = Math.floor(Math.random() * 255);
+    let color2_3 = Math.floor(Math.random() * 255);
+    let color2 =  "rgb(" + color2_1 + "," + color2_2 + ", " + color2_3 + ")";
+    //clr2
+    let color3_1 = Math.floor(Math.random() * 255);
+    let color3_2 = Math.floor(Math.random() * 255);
+    let color3_3 = Math.floor(Math.random() * 255);
+    let color3 =  "rgb(" + color3_1 + "," + color3_2 + ", " + color3_3 + ")";
+    //clr3
+    let color4_1 = Math.floor(Math.random() * 255);
+    let color4_2 = Math.floor(Math.random() * 255);
+    let color4_3 = Math.floor(Math.random() * 255);
+    let color4 =  "rgb(" + color4_1 + "," + color4_2 + ", " + color4_3 + ")";
+    //clr4
+    let color5_1 = Math.floor(Math.random() * 255);
+    let color5_2 = Math.floor(Math.random() * 255);
+    let color5_3 = Math.floor(Math.random() * 255);
+    let color5 =  "rgb(" + color5_1 + "," + color5_2 + ", " + color5_3 + ")";
+    //clr5 
 setTimeout(
     function show3() {
         document.getElementById("txt_3").style.display = "flex";
@@ -10,26 +35,41 @@ setTimeout(
         document.getElementById("txt_3").style.display = "none";
         document.getElementById("txt_2").style.display = "flex";
     },
-    2010
+    2100
 )
 setTimeout(
     function show1() {
         document.getElementById("txt_2").style.display = "none";
         document.getElementById("txt_1").style.display = "flex";
     },
-    3010
+    3100
 )
 setTimeout(
     function show_bumm() {
         document.getElementById("txt_1").style.display = "none  ";
         document.getElementById("txt_bumm").style.display = "flex";
     },
-    4010    
+    4100    
 )
+setTimeout(
+    function show_divs() {
+        let div1 = document.getElementById("clr1");
+        let div2 = document.getElementById("clr2");
+        let div3 = document.getElementById("clr3");
+        let div4 = document.getElementById("clr4");
+        let div5 = document.getElementById("clr5");
+        div1.style.backgroundColor = color1;
+        div2.style.backgroundColor = color2;
+        div3.style.backgroundColor = color3;
+        div4.style.backgroundColor = color4;
+        div5.style.backgroundColor = color5;
+    }
+    )
 setTimeout(
     function destroy() {
         document.getElementById("txt_bumm").style.display = "none";
+        document.getElementsByClassName("color").style.display = "none";
     },
     7000
-)
+    )
 }
