@@ -24,9 +24,28 @@ function start() {
     let color5_3 = Math.floor(Math.random() * 255);
     let color5 =  "rgb(" + color5_1 + "," + color5_2 + ", " + color5_3 + ")";
     //clr5 
+    let all_colors = [color1, color2, color3, color4, color5];
+    let color_extra = all_colors[Math.floor(Math.random() * 4)];
+    function coloring_divs() {
+        let div1 = document.getElementById("clr1");
+        let div2 = document.getElementById("clr2");
+        let div3 = document.getElementById("clr3");
+        let div4 = document.getElementById("clr4");
+        let div5 = document.getElementById("clr5");
+        let div_extra = document.getElementById("clr_extra");
+        div1.style.backgroundColor = color1;
+        div2.style.backgroundColor = color2;
+        div3.style.backgroundColor = color3;
+        div4.style.backgroundColor = color4;
+        div5.style.backgroundColor = color5;
+        div_extra.style.backgroundColor = color_extra;
+    }
+    //show divs function
 setTimeout(
     function show3() {
         document.getElementById("txt_3").style.display = "flex";
+        document.getElementById("colors").style.display = "flex";
+        coloring_divs()
     },
     1000
 )
@@ -34,6 +53,7 @@ setTimeout(
     function show2() {
         document.getElementById("txt_3").style.display = "none";
         document.getElementById("txt_2").style.display = "flex";
+        document.getElementById("extra_color").style.display = "flex";
     },
     2100
 )
@@ -52,23 +72,10 @@ setTimeout(
     4100    
 )
 setTimeout(
-    function show_divs() {
-        let div1 = document.getElementById("clr1");
-        let div2 = document.getElementById("clr2");
-        let div3 = document.getElementById("clr3");
-        let div4 = document.getElementById("clr4");
-        let div5 = document.getElementById("clr5");
-        div1.style.backgroundColor = color1;
-        div2.style.backgroundColor = color2;
-        div3.style.backgroundColor = color3;
-        div4.style.backgroundColor = color4;
-        div5.style.backgroundColor = color5;
-    }
-    )
-setTimeout(
     function destroy() {
         document.getElementById("txt_bumm").style.display = "none";
-        document.getElementsByClassName("color").style.display = "none";
+        document.getElementById("colors").style.display = "none";
+        document.getElementById("extra_color").style.display = "none";
     },
     7000
     )
