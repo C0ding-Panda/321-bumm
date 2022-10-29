@@ -80,3 +80,33 @@ setTimeout(
     7000
     )
 }
+function first() {
+    if (document.getElementById("clr_extra").style.backgroundColor == document.getElementById("clr1").style.backgroundColor){
+        window.alert("you won!");
+    }
+    
+}
+function second() {
+    if (document.getElementById("clr_extra").style.backgroundColor == document.getElementById("clr2").style.backgroundColor){
+        window.alert("you won!");
+    }
+    
+}
+function third() {
+    if (document.getElementById("clr_extra").style.backgroundColor == document.getElementById("clr3").style.backgroundColor){
+        window.alert("you won!");
+    }
+    
+}
+function fourth() {
+    if (document.getElementById("clr_extra").style.backgroundColor == document.getElementById("clr4").style.backgroundColor){
+        window.alert("you won!");
+    }
+    
+}
+function fifth() {
+    if (document.getElementById("clr_extra").style.backgroundColor == document.getElementById("clr5").style.backgroundColor){
+        window.alert("you won!");
+    }
+    
+}
